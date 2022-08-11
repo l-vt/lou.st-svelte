@@ -1,0 +1,160 @@
+$roundness: 0.5rem
+
+$green-0: #d6e1de
+$green-1: #edf6f3
+  
+\:root
+  font-family: "Inter", Helvetica, Arial, sans-serif
+  font-size: 24px
+  color: #000
+  background: #FFF
+  font-synthesis: none
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: 100%
+  --swiper-pagination-color: #575757
+  @media screen and (max-width: 700px)
+    font-size: 20px
+
+html, body
+  margin: 0
+  padding: 0
+
+main
+  max-width: 1200px
+  width: 100%
+  padding: 2rem
+  margin: 0 auto
+  box-sizing: border-box
+  @media screen and (max-width: 700px)
+    padding: 1rem
+
+.colored-wrapper
+  background-color: #edf6f3
+    
+a
+  color: currentColor
+  text-decoration: underline dotted
+
+.head-area
+  .top-row
+    display: flex
+    align-items: center
+    img
+      border-radius: $roundness
+      margin-left: 3rem
+      background: $green-0
+      box-shadow: 0.5rem -0.5rem 0 $green-1
+      transform: rotate(10deg)
+  p
+    line-height: 1.5em
+  h1
+    font-size: 2.5rem
+  padding-bottom: 1rem
+
+.swiper-slide
+  padding-bottom: 1em
+  .slide-prev-image
+    border-radius: $roundness
+    min-height: 300px
+    width: 100%
+    background-size: cover
+  .slide-info
+    padding: 1rem 0
+    box-sizing: border-box
+    .year
+      letter-spacing: 0.1em
+      font-size: 0.65em
+      font-weight: 600
+    p
+      padding: 0
+      margin: 0
+      margin-top: 0.3em
+      font-size: 0.8em
+    h3
+      font-size: 1em
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0
+      margin: 0
+      a
+        text-decoration: none
+        background: $green-1
+        border-radius: $roundness
+        padding: 0.3em 0.5em
+        font-size: 0.7em
+        display: flex
+        align-items: center
+        transition: background 0.2s
+        &:hover
+          background: $green-0
+        .icon
+          margin-right: 0.5em
+
+section
+  margin: 4em 0
+
+.list-section
+  p
+    line-height: 1.5em
+    i
+      font-family: monospace
+  h2
+    font-weight: 600
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    margin-bottom: 1rem
+    small
+      border-radius: $roundness
+      background: $green-1
+      line-height: 1.5em
+      padding: 0 0.5em
+      margin-left: .5rem
+      font-size: 0.5em
+      animation: fadeInLeft
+      animation-duration: 1s
+    .icon
+      margin-right: 0.5rem
+  ul, li
+    margin: 0
+    padding: 0
+  li
+    list-style: none
+    margin-bottom: 1rem
+    line-height: 1.3em
+    &:last-child
+      margin-bottom: 0
+    .year
+      transform: translateX(-100%)
+      padding-right: 0.5em
+      font-size: 0.6rem
+      font-weight: 600
+      position: absolute
+      letter-spacing: 0.2em
+      &::after
+        content: " —"
+      @media screen and (max-width: 1280px)
+        transform: unset
+        position: relative
+    .title
+      font-weight: 600
+      display: flex
+      
+      a
+        margin-left: 0.5em
+        svg
+          height: 0.8em
+    .more-info
+      font-size: 0.85rem
+      .sub-list
+        &::before
+          content: "—"
+          margin-right: 0.5em
+  .social-list
+    li
+      display: inline-block
+      padding-right: 1em
