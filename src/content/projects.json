@@ -4,14 +4,14 @@
     "year": 2020,
     "image": "projects/red-river-valley.png",
     "link": "https://gap.itch.io/by-the-red-river-valley",
-    "description": "Functioning vertical slice of a 3D narrative game",
+    "description": "Functioning vertical slice of a 3D narrative game. Made in Unity Engine using C#",
     "linktitle": "itch"
   },
   {
     "title": "Vehicle Prototype",
     "year": 2021,
     "image": "projects/driving-prototype.png",
-    "description": "Exploration of a super simple sphere-collider-based vehicle approach",
+    "description": "Exploration of a super simple sphere-collider-based vehicle approach. Made in Unity Engine using C#",
     "link": "https://twitter.com/vuewis/status/1461475285942030342",
     "linktitle": "Twitter"
   },
@@ -20,14 +20,14 @@
     "year": 2020,
     "image": "projects/losing-ctrl.png",
     "link": "https://indieburg.itch.io/losing-control",
-    "description": "A puzzle game about copy and pasting, built with friends in 3 days. GMTK Jam 2020 winner",
+    "description": "A puzzle game about copy and pasting, built with friends in 3 days with Typescript and PixiJS; GMTK Jam 2020 winner",
     "linktitle": "itch"
   },
   {
     "title": "Stealth Game Prototype",
     "year": 2021,
     "image": "projects/stealth-prototype.png",
-    "description": "Dishonored-inspired stealth character controller with enemy AI",
+    "description": "Dishonored-inspired stealth character controller with enemy AI. Made in Unity Engine using C#",
     "link": "https://twitter.com/vuewis/status/1426321788737363968",
     "linktitle": "Twitter"
   },
@@ -36,7 +36,7 @@
     "year": 2015,
     "image": "projects/bomb-defusal-map.jpg",
     "link": "https://vought.artstation.com/projects/0XYlAY",
-    "description": "Custom defuse map for Counter Strike: Global Offensive",
+    "description": "Custom defuse map for Counter Strike: Global Offensive. Built in Source Hammer Editor",
     "linktitle": "ArtStation"
   }
 ]
