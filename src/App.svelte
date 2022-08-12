@@ -1,4 +1,7 @@
-<script>
+<script context="module">
+
+  export const prerender = true;
+
   import Image from "svelte-image";
   // slider
   import { Swiper, SwiperSlide } from "swiper/svelte";
