@@ -1,5 +1,13 @@
 [
   {
+    "title": "Bomb-Defusal Layout",
+    "year": 2023,
+    "image": "projects/bomb-defusal-2.png",
+    "link": "https://mstdn.social/@vuewis/110208418900214760",
+    "description": "A level blockout for a Bomb-Defusal-style (Valorant) map, created in Unreal Engine 5.",
+    "linktitle": "Mastodon"
+  },
+  {
     "title": "By The Red River Valley",
     "year": 2020,
     "image": "projects/red-river-valley.png",
@@ -9,11 +17,11 @@
   },
   {
     "title": "Vehicle Prototype",
-    "year": 2021,
-    "image": "projects/driving-prototype.png",
-    "description": "Exploration of a super simple sphere-collider-based vehicle approach. Made in Unity Engine using C#",
-    "link": "https://twitter.com/vuewis/status/1461475285942030342",
-    "linktitle": "Twitter"
+    "year": "2021, 2023",
+    "image": "projects/driving-prototype-2.png",
+    "description": "Exploration of a super simple sphere-collider-based vehicle approach. Currently working on it again. Made in Unity Engine using C#",
+    "link": "https://mstdn.social/@vuewis/110779323548675127",
+    "linktitle": "Mastodon"
   },
   {
     "title": "Losing Ctrl",
