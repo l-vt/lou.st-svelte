@@ -1,21 +1,39 @@
 $roundness: 0.5rem
-
-$green-0: #d6e1de
-$green-1: #edf6f3
   
 \:root
   font-family: "Inter", Helvetica, Arial, sans-serif
   font-size: 24px
-  color: #000
-  background: #FFF
   font-synthesis: none
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   -webkit-text-size-adjust: 100%
+
+  --font-color: #000
+  --background-color: #FFF
+  --accent-a: #d6e1de
+  --accent-b: #edf6f3
+  --accent-c: #edf6f3
   --swiper-pagination-color: #575757
+  --swiper-pagination-bullet-inactive-color: #000
+
   @media screen and (max-width: 700px)
     font-size: 20px
+  @media (prefers-color-scheme: dark)
+    --font-color: #eeebe4
+    --background-color: #0F0F0F
+    --accent-a: #1d1d1d
+    --accent-b: #2c2e2d
+    --accent-c: #1d1f1e
+    --swiper-pagination-bullet-inactive-color: #FFF
+    --swiper-pagination-color: #FFF
+
+  color: var(--font-color)
+  background: var(--background-color)
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Outfit"
+  font-weight: 600
 
 html, body
   margin: 0
@@ -31,7 +49,7 @@ main
     padding: 1rem
 
 .colored-wrapper
-  background-color: #edf6f3
+  background-color: var(--accent-c)
     
 a
   color: currentColor
@@ -44,8 +62,8 @@ a
     img
       border-radius: $roundness
       margin-left: 3rem
-      background: $green-0
-      box-shadow: 0.5rem -0.5rem 0 $green-1
+      background: var(--accent-a)
+      box-shadow: 0.5rem -0.5rem 0 var(--accent-b)
       transform: rotate(10deg)
   p
     line-height: 1.5em
@@ -81,7 +99,7 @@ a
       margin: 0
       a
         text-decoration: none
-        background: $green-1
+        background: var(--accent-b)
         border-radius: $roundness
         padding: 0.3em 0.5em
         font-size: 0.7em
@@ -89,7 +107,7 @@ a
         align-items: center
         transition: background 0.2s
         &:hover
-          background: $green-0
+          background: var(--accent-a)
         .icon
           margin-right: 0.5em
 
@@ -110,7 +128,7 @@ section
     margin-bottom: 1rem
     small
       border-radius: $roundness
-      background: $green-1
+      background: var(--accent-b)
       line-height: 1.5em
       padding: 0 0.5em
       margin-left: .5rem

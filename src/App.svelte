@@ -21,8 +21,7 @@
   import DeviceGamepad from "tabler-icons-svelte/icons/DeviceGamepad.svelte";
   import WritingSign from "tabler-icons-svelte/icons/WritingSign.svelte";
   import Trophy from "tabler-icons-svelte/icons/Trophy.svelte";
-  import Link from "tabler-icons-svelte/icons/Link.svelte";
-  import HandRock from "tabler-icons-svelte/icons/HandRock.svelte";
+  import ArmChair2 from "tabler-icons-svelte/icons/ArmChair2.svelte";
   import Send from "tabler-icons-svelte/icons/Send.svelte";
   import Click from "tabler-icons-svelte/icons/Click.svelte";
   import ExternalLink from "tabler-icons-svelte/icons/ExternalLink.svelte";
@@ -36,7 +35,7 @@
   <div class="head-area">
     <div class="top-row">
       <h1>{hi}, I'm Louis!</h1>
-      <img src="me.png" class="profile" width="100" height="100" />
+      <img src="me.png" class="profile" title="Louis Vogt, photographed by Simon Klinz" width="100" height="100" />
     </div>
     <p>
       Welcome to my personal website. I'm currently based near Frankfurt,
@@ -66,7 +65,7 @@
     </ul>
   </ListSection>
   <ListSection name="Personal" count={projects.length}>
-    <HandRock size={32} slot="icon" />
+    <ArmChair2 size={32} slot="icon" />
     <Swiper
       class="slider"
       slidesPerView={2}
@@ -160,14 +159,14 @@
       <Send size={32} slot="icon" />
       <p>
         There are several ways to contact me. Easiest is to use my email
-        address, which is this <i>my first name @ this domain</i>. You can dm me on most social media sites as well.
+        address, which is this <i>my first name @ this domain</i>. You can send me a direct message on most social media sites as well.
       </p>
     </ListSection>
     <ListSection name="Social Media">
       <Click size={32} slot="icon" />
       <ul class="social-list">
         {#each socials as social, i}
-          <li><a href={social.url}>{social.display}</a></li>
+          <li><a href={social.url} rel="me">{social.display}</a></li>
         {/each}
       </ul>
     </ListSection>
