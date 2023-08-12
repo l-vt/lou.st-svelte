@@ -21,7 +21,7 @@
   import DeviceGamepad from "tabler-icons-svelte/icons/DeviceGamepad.svelte";
   import WritingSign from "tabler-icons-svelte/icons/WritingSign.svelte";
   import Trophy from "tabler-icons-svelte/icons/Trophy.svelte";
-  import ArmChair2 from "tabler-icons-svelte/icons/ArmChair2.svelte";
+  import ArmChair2 from "tabler-icons-svelte/icons/Armchair2.svelte";
   import Send from "tabler-icons-svelte/icons/Send.svelte";
   import Click from "tabler-icons-svelte/icons/Click.svelte";
   import ExternalLink from "tabler-icons-svelte/icons/ExternalLink.svelte";
