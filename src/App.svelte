@@ -38,10 +38,7 @@
       <img src="me.png" class="profile" title="Louis Vogt, photographed by Simon Klinz" width="100" height="100" />
     </div>
     <p>
-      Welcome to my personal website. I'm currently based near Frankfurt,
-      Germany and am working as a Level Designer at <a
-        href="https://limbic-entertainment.com">Limbic Entertainment</a
-      >. Besides my professional work, I make little games, music,
+      Welcome to my personal website. I'm a German currently working in Edinburgh, Scotland as a Mission Designer. Besides my professional work, I make little games, music,
       and websites in my spare time.
     </p>
   </div>
