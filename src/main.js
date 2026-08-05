@@ -1,6 +1,5 @@
 import "./stylesheets/style.sass";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter";
+import "@fontsource/outfit";
 import "@fontsource/outfit/600.css";
 import "animate.css";
 import App from "./App.svelte";

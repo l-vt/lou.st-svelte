@@ -1,9 +1,25 @@
 [
   {
+    "title": "Grand Theft Auto VI",
+    "year": 2026,
+    "developer": "Rockstar Games",
+    "publisher": "Take-Two Interactive",
+    "role": "Designer: Missions",
+    "link": "https://www.rockstargames.com/VI"
+  },
+  {
+    "title": "Corsair Cove",
+    "year": 2026,
+    "developer": "Limbic Entertainment",
+    "publisher": "Hooded Horse",
+    "role": "Additional Level Design",
+    "link": "https://www.hoodedhorse.com/games/corsair-cove"
+  },
+  {
     "title": "Park Beyond",
     "year": 2023,
     "developer": "Limbic Entertainment",
-    "publisher": "BANDAI NAMCO Entertainment Europe",
+    "publisher": "BANDAI NAMCO Entertainment",
     "role": "Level Designer",
     "link": "https://impossify.com/"
   },

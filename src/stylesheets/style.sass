@@ -1,7 +1,7 @@
 $roundness: 0.5rem
   
 \:root
-  font-family: "Inter", Helvetica, Arial, sans-serif
+  font-family: "Outfit", sans-serif
   font-size: 24px
   font-synthesis: none
   text-rendering: optimizeLegibility
@@ -14,6 +14,7 @@ $roundness: 0.5rem
   --accent-a: #d6e1de
   --accent-b: #edf6f3
   --accent-c: #edf6f3
+  --border: #DDD
   --swiper-pagination-color: #575757
   --swiper-pagination-bullet-inactive-color: #000
 
@@ -25,6 +26,7 @@ $roundness: 0.5rem
     --accent-a: #1d1d1d
     --accent-b: #2c2e2d
     --accent-c: #1d1f1e
+    --border: #212121
     --swiper-pagination-bullet-inactive-color: #FFF
     --swiper-pagination-color: #FFF
 
@@ -39,10 +41,27 @@ html, body
   margin: 0
   padding: 0
 
-main
-  max-width: 1200px
+nav
   width: 100%
-  padding: 2rem
+  display: flex
+  .logo
+    width: 50%
+    padding: 1rem 0
+    font-weight: 800
+  .navitems
+    width: 50%
+    box-sizing: border-box
+    display: flex
+    a
+      text-decoration: none
+      font-size: 0.8em
+      font-weight: 500
+      margin-right: 2em
+      padding: 1rem 0
+main
+  max-width: 1000px
+  width: 100%
+  padding: 1rem
   margin: 0 auto
   box-sizing: border-box
   @media screen and (max-width: 700px)
@@ -50,31 +69,25 @@ main
 
 .colored-wrapper
   background-color: var(--accent-c)
+  .border
+    border-top: 1px solid var(--border)
     
 a
   color: currentColor
   text-decoration: underline dotted
 
-.head-area
-  .top-row
-    display: flex
-    align-items: center
-    img
-      border-radius: $roundness
-      margin-left: 3rem
-      background: var(--accent-a)
-      box-shadow: 0.5rem -0.5rem 0 var(--accent-b)
-      transform: rotate(10deg)
-  p
-    line-height: 1.5em
-  h1
-    font-size: 2.5rem
-  padding-bottom: 1rem
+.hero
+  margin: 0
+  padding: 3rem 0
+  width: 100%
+  border-bottom: 1px solid var(--border)
+  line-height: 1.5em
+  font-size: 1.2em
 
 .swiper-slide
   padding-bottom: 1em
   .slide-prev-image
-    border-radius: $roundness
+    border: 1px solid var(--border)
     min-height: 300px
     width: 100%
     background-size: cover
@@ -99,20 +112,19 @@ a
       margin: 0
       a
         text-decoration: none
-        background: var(--accent-b)
-        border-radius: $roundness
+        border: 2px solid var(--accent-a)
         padding: 0.3em 0.5em
         font-size: 0.7em
         display: flex
         align-items: center
         transition: background 0.2s
         &:hover
-          background: var(--accent-a)
+          background: var(--accent-b)
         .icon
           margin-right: 0.5em
 
 section
-  margin: 4em 0
+  padding: 1rem 0
 
 .list-section
   p
@@ -143,7 +155,7 @@ section
   li
     list-style: none
     margin-bottom: 1rem
-    line-height: 1.3em
+    line-height: 1.4em
     &:last-child
       margin-bottom: 0
     .year
@@ -161,13 +173,14 @@ section
     .title
       font-weight: 600
       display: flex
-      
+      margin-bottom: 0.2em
       a
         margin-left: 0.5em
         svg
           height: 0.8em
     .more-info
       font-size: 0.85rem
+      opacity: 0.75
       .sub-list
         &::before
           content: "—"

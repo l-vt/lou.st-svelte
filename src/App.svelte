@@ -26,22 +26,14 @@
   import Click from "tabler-icons-svelte/icons/Click.svelte";
   import ExternalLink from "tabler-icons-svelte/icons/ExternalLink.svelte";
 
-  // hi
-  const greetings = ["Hi", "Hey", "Heyo", "Hej", "Salut", "Gude"];
-  let hi = greetings[Math.floor(Math.random() * greetings.length)];
 </script>
 
 <main>
-  <div class="head-area">
-    <div class="top-row">
-      <h1>{hi}, I'm Louis!</h1>
-      <img src="me.png" class="profile" title="Louis Vogt, photographed by Simon Klinz" width="100" height="100" />
-    </div>
-    <p>
-      Welcome to my personal website. I'm a German currently working in Edinburgh, Scotland as a Mission Designer. Besides my professional work, I make little games, music,
-      and websites in my spare time.
-    </p>
+  <div class="hero">
+    <b>Hi, I'm Louis Vogt</b> and this is my personal website.<br/>I'm a game developer based in Edinburgh, Scotland. In my free time I make music and build things for the web!
   </div>
+</main>
+<main>
   <ListSection name="Commercial Work" count={releases.length}>
     <DeviceGamepad size={32} slot="icon" />
     <ul>
@@ -150,7 +142,7 @@
     </ul>
   </ListSection>
 </main>
-<div class="colored-wrapper">
+<div class="colored-wrapper border">
   <main>
     <ListSection name="Contact">
       <Send size={32} slot="icon" />
@@ -163,7 +155,7 @@
       <Click size={32} slot="icon" />
       <ul class="social-list">
         {#each socials as social, i}
-          <li><a href={social.url} rel="me">{social.display}</a></li>
+          <li><a href={social.url} target="_blank" rel="me">{social.display}</a></li>
         {/each}
       </ul>
     </ListSection>
